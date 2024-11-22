@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encuesta Halo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title"><em>Encuesta de HALO</em></h1>
+    <p id="description">
+      Completa el formulario para saber que tanto te gusta HALO
+    </p>
+
+    <form id="survey-form">
+      <p id="DT">Primero que nada ingresa tus datos personales</p>
+      <label id="name-label" for="name">Nombre:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Tu nombre o Alias"
+        required
+      />
+
+      <label id="email-label" for="email">Correo Electrónico:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Tu correo electronico"
+        required
+      />
+
+      <label id="number-label" for="number">Edad:</label>
+      <input
+        type="number"
+        id="number"
+        name="age"
+        placeholder="Tu edad"
+        min="18"
+        max="100"
+      />
+
+      <label for="dropdown">¿Como encontraste esta Encuesta de HALO?</label>
+      <select id="dropdown" name="source">
+        <option value="youtube">youtube</option>
+        <option value="amigo">Recomendación de un amigo</option>
+        <option value="redes">Redes sociales</option>
+        <option value="juego">En el videojuego</option>
+      </select>
+
+      <p>¿Con qué frecuencia juegas HALO?</p>
+      <label
+        ><input type="radio" name="frecuencia" value="diario" /> Diario</label
+      >
+      <label
+        ><input type="radio" name="frecuencia" value="semanal" /> Semanal</label
+      >
+      <label
+        ><input type="radio" name="frecuencia" value="mensual" /> Mensual</label
+      >
+
+      <p>En una escala del 1 al 10 que tanto te gusta la saga de HALO</p>
+      <label><input type="checkbox" name="ESCALA" value="diez" />10 =)</label>
+      <label><input type="checkbox" name="ESCALA" value="nueve" />9</label>
+      <label><input type="checkbox" name="ESCALA" value="ocho" />8</label>
+      <label><input type="checkbox" name="ESCALA" value="siete" />7</label>
+      <label><input type="checkbox" name="ESCALA" value="seis" />6</label>
+      <label><input type="checkbox" name="ESCALA" value="cinco" />5</label>
+      <label><input type="checkbox" name="ESCALA" value="cuatro" />4</label>
+      <label><input type="checkbox" name="ESCALA" value="tres" />3</label>
+      <label><input type="checkbox" name="ESCALA" value="dos" />2</label>
+      <label><input type="checkbox" name="ESCALA" value="uno" />1 =(</label>
+
+      <label for="comentarios">¿Quieres agregar algo?:</label>
+      <textarea
+        id="comentarios"
+        name="comentarios"
+        placeholder="Escribe lo que piensas !!"
+      ></textarea>
+
+      <button type="submit" id="submit">Enviar</button>
+    </form>
+  </body>
+</html>
